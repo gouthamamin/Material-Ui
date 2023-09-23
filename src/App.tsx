@@ -11,11 +11,6 @@ import HomePageContent from './Components/HomePageContent';
 // import HelpContent from './Components/HelpContent';
 
 function App() {
-	const [selectedOption, setSelectedOption] = useState('home');
-
-	const handleMenuItemClick = (option: any) => {
-		setSelectedOption(option);
-	};
 
 	const [selectedTab, setSelectedTab] = useState('home');
 
@@ -24,7 +19,7 @@ function App() {
 	};
 
 	const getContent = () => {
-		switch (selectedOption) {
+		switch (selectedTab) {
 			case 'home':
 				return <HomePageContent />;
 
@@ -97,28 +92,6 @@ function App() {
 							inputProps={{ 'aria-label': 'search' }}
 						/>
 					</Search>
-					{/* <Box style={{ marginLeft: 'auto' }}>
-						<Button
-							variant="text"
-							onClick={() => handleMenuItemClick('home')}
-							sx={{ marginRight: '20px', color: "white" }}
-						>
-							Home
-						</Button>
-						<Button
-							variant="text"
-							onClick={() => handleMenuItemClick('services')}
-							sx={{ marginRight: '20px', color: "white" }}
-						>
-							Services
-						</Button>
-						<Button
-							variant="text"
-							sx={{ color: "white" }}
-							onClick={() => handleMenuItemClick('help')}
-						>Help
-						</Button>
-					</Box> */}
 
 					<Tabs
 						value={selectedTab}
@@ -142,7 +115,7 @@ function App() {
 				</Toolbar>
 			</AppBar>
 			<Container>
-				{selectedTab === 'home' && <HomePageContent />}
+				{getContent()}
 			</Container>
 		</Box >
 	);
