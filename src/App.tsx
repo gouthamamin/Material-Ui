@@ -3,10 +3,11 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { Box, Button, IconButton, InputBase, Tabs, Tab, alpha, styled } from '@mui/material';
+import { Box, IconButton, InputBase, Tabs, Tab, alpha, styled } from '@mui/material';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import SearchIcon from '@mui/icons-material/Search';
 import HomePageContent from './Components/HomePageContent';
+import Footer from './Components/Footer';
 // import ServicesContent from './Components/ServicesContent';
 // import HelpContent from './Components/HelpContent';
 
@@ -117,6 +118,7 @@ function App() {
 			<Container>
 				{getContent()}
 			</Container>
+			<Footer></Footer>
 		</Box >
 	);
 }
