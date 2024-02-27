@@ -39,6 +39,10 @@ function HomePageContent() {
              <Typography variant="body1" gutterBottom>
                  <strong>Deployed using vercel</strong>
             </Typography>
+
+             <Typography variant="body1" gutterBottom>
+                 <strong>Amin</strong>
+            </Typography>
             
             <Button variant="contained" color="primary">
                 Get Started
