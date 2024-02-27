@@ -36,6 +36,10 @@ function HomePageContent() {
                 Discover the <strong>amazing features</strong> of our website:
             </Typography>
 
+             <Typography variant="body1" gutterBottom>
+                 <strong>Deployed using vercel</strong>
+            </Typography>
+            
             <Button variant="contained" color="primary">
                 Get Started
             </Button>
